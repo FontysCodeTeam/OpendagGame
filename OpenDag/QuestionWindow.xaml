@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenDag"
         mc:Ignorable="d"
-        Title="QuestionWindow" Height="480" Width="1400">
+        Title="QuestionWindow" Height="480" Width="1400" Closed="Window_Closed" IsVisibleChanged="Window_IsVisibleChanged">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="280"></ColumnDefinition>
@@ -18,12 +18,16 @@
             <RowDefinition Height="280"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Image x:Name="imgBusiness" Grid.Row="0" Grid.Column="0" Margin="5" Source="images/Business.png"/>
-        <Image x:Name="imgInfrastructure" Grid.Row="0" Grid.Column="1" Margin="5" Source="images/Infrastructure.png"/>
-        <Image x:Name="imgMedia" Grid.Row="0" Grid.Column="2" Margin="5" Source="images/Media.png"/>
-        <Image x:Name="imgSoftware" Grid.Row="0" Grid.Column="3" Margin="5" Source="images/Software.png"/>
-        <Image x:Name="imgTechnology" Grid.Row="0" Grid.Column="4" Margin="5" Source="images/Technology.png"/>
-        <TextBlock x:Name="tbQuestion" Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" Text="Welke van deze afbeeldingen vind jij het meest interessant?" FontSize="50" Margin="20" TextAlignment="Center"/>
+        <Image Visibility="Visible" x:Name="imgBusiness" Grid.Row="0" Grid.Column="0" Margin="10" Source="images/Business.png" MouseUp="imgBusiness_MouseUp"/>
+        <Image Visibility="Visible" x:Name="imgInfrastructure" Grid.Row="0" Grid.Column="1" Margin="10" Source="images/Infrastructure.png" MouseUp="imgInfrastructure_MouseUp"/>
+        <Image Visibility="Visible" x:Name="imgMedia" Grid.Row="0" Grid.Column="2" Margin="10" Source="images/Media.png" MouseUp="imgMedia_MouseUp"/>
+        <Image Visibility="Visible" x:Name="imgSoftware" Grid.Row="0" Grid.Column="3" Margin="10" Source="images/Software.png" MouseUp="imgSoftware_MouseUp"/>
+        <Image Visibility="Visible" x:Name="imgTechnology" Grid.Row="0" Grid.Column="4" Margin="10" Source="images/Technology.png" MouseUp="imgTechnology_MouseUp"/>
+        <TextBlock Visibility="Visible" x:Name="tbQuestion" Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" Text="Welke van deze afbeeldingen vind jij het meest interessant?" FontSize="50" Margin="20" TextAlignment="Center"/>
+        <TextBlock Visibility="Hidden" x:Name="tbQuestionTwo" Grid.ColumnSpan="5" Grid.Row="0" Grid.Column="0" Text="Vind je ...... interessant?" FontSize="50" Margin="100" TextAlignment="Center"/>
+        <Button Visibility="Hidden" x:Name="btnJa" Grid.Row="1" Grid.Column="1" Content="Ja" FontSize="30" Margin="40" Click="btnJa_Click"/>
+        <Button Visibility="Hidden" x:Name="btnNee" Grid.Row="1" Grid.Column="3" Content="Nee" FontSize="30"  Margin="40" Click="btnNee_Click"/>
+        
 
     </Grid>
 </Window>

@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenDag"
         mc:Ignorable="d"
-        Title="MainWindow" Height="590.1" Width="1005.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="MainWindow" Height="590.1" Width="1005.2" WindowStartupLocation="CenterScreen" IsVisibleChanged="Window_IsVisibleChanged">
     <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"></ColumnDefinition>
             <ColumnDefinition Width="161*"/>
             <ColumnDefinition Width="161*"/>
             <ColumnDefinition Width="151*"/>
-            <ColumnDefinition Width="161*"></ColumnDefinition>
+            <ColumnDefinition Width="161*"/>
             <ColumnDefinition Width="161*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -20,11 +19,12 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Text="Infrastructure" Grid.Row="0" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="52,82,44.4,82.4" Height="22" Width="106"/>
-        <TextBlock Text="Media" Grid.Row="0" Grid.Column="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="68,82,27.4,82.4" Height="22" Width="107"/>
-        <TextBlock Text="Software" Grid.Row="1" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="52,82.6,44.4,82.6" Height="22" Width="106"/>
-        <TextBlock Text="Start" Grid.Row="1" Grid.Column="3" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="81.2,82.6,75.4,82.6" Height="22" Width="33"/>
-        <TextBlock Text="Technology" Grid.Row="2" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="52,87.4,44.4,77.8" Height="22" Width="106"/>
-        <TextBlock Text="Business" Grid.Row="2" Grid.Column="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="68,82.4,27.4,82.8" Height="22" Width="107"/>
+        <TextBlock Text="Infrastructure" Grid.Row="0" Grid.Column="0" Height="22" Width="107" FontSize="16"/>
+        <TextBlock Text="Media" Grid.Row="0" Grid.Column="4" FontSize="16" Height="22" Width="107"/>
+        <TextBlock Text="Software" Grid.Row="1" Grid.Column="0" FontSize="16" Height="22" Width="106"/>
+        <TextBlock Text="Start" Grid.Row="1" Grid.Column="2" FontSize="16" Height="22" Width="33"/>
+        <TextBlock Text="Technology" Grid.Row="2" Grid.Column="0" FontSize="16" Height="22" Width="106"/>
+        <TextBlock Text="Business" Grid.Row="2" Grid.Column="4" FontSize="16" Height="22" Width="107"/>
+        <Image x:Name="imgCar" Grid.Row="1" Grid.Column="2" Source="images/Auto.jpg" MouseUp="imgCar_MouseUp"></Image>
     </Grid>
 </Window>

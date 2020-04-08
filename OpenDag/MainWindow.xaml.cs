@@ -20,16 +20,112 @@ namespace OpenDag
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int keuze = 0;
+        public bool eerstevraag = true;
+        public bool keuzeCheck = false;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            QuestionWindow questionWindow = new QuestionWindow();
-            questionWindow.Show();
-            this.Hide();
+            //Business: 1
+            //Infrastructure: 2
+            //Media: 3
+            //Software: 4
+            //Technology: 5
+            if (keuzeCheck == true && eerstevraag == true)
+            {
+                switch (keuze)
+                {
+
+                    case 1:
+                        Grid.SetColumn(imgCar, 4);
+                        break;
+                    case 2:
+                        Grid.SetColumn(imgCar, 0);
+                        break;
+                    case 3:
+                        Grid.SetColumn(imgCar, 4);
+                        break;
+                    case 4:
+                        Grid.SetColumn(imgCar, 0);
+                        break;
+                    case 5:
+                        Grid.SetColumn(imgCar, 0);
+                        break;
+                    default:
+                        Console.WriteLine("Je hebt geen keuze gemaakt");
+                        break;
+                }
+            }
+            else if (keuzeCheck == false && eerstevraag == true)
+            {
+
+                switch (keuze)
+                {
+
+                    case 1:
+                        //Grid.Row="2" Grid.Column="4""
+                        Grid.SetRow(imgCar, 2);
+                        Grid.SetColumn(imgCar, 3);
+                        eerstevraag = false;
+                        break;
+                    case 2:
+                        //Grid.Row="0" Grid.Column="0""
+                        Grid.SetRow(imgCar, 0);
+                        Grid.SetColumn(imgCar, 1);
+                        eerstevraag = false;
+                        break;
+                    case 3:
+                        //Grid.Row="0" Grid.Column="4""
+                        Grid.SetRow(imgCar, 0);
+                        Grid.SetColumn(imgCar, 3);
+                        eerstevraag = false;
+                        break;
+                    case 4:
+                        //Grid.Row="1" Grid.Column="0""
+                        Grid.SetRow(imgCar, 1);
+                        Grid.SetColumn(imgCar, 1);
+                        eerstevraag = false;
+                        break;
+                    case 5:
+                        //Grid.Row="2" Grid.Column="0""
+                        Grid.SetRow(imgCar, 2);
+                        Grid.SetColumn(imgCar, 1);
+                        eerstevraag = false;
+                        break;
+                    default:
+                        Console.WriteLine("Je hebt geen keuze gemaakt");
+                        break;
+                }
+            }
+            else if (keuzeCheck == false && eerstevraag == false)
+            {
+                Grid.SetRow(imgCar, 1);
+                Grid.SetColumn(imgCar, 2);
+            }
+            
+
+        }
+
+        private void imgCar_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (keuze == 0)
+            {
+                QuestionWindow questionWindow = new QuestionWindow(this, eerstevraag);
+                questionWindow.Show();
+                this.Hide();
+            }
+            else
+            {
+                QuestionWindow questionWindow = new QuestionWindow(this, eerstevraag);
+                questionWindow.Show();
+                this.Hide();
+            }
+            
         }
     }
 }
