@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenDag"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"></ColumnDefinition>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="265*"></ColumnDefinition>
+            <ColumnDefinition Width="265*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Row0 Column0" Grid.Row="0" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,59,100.8,59" Height="22" Width="106"></TextBlock>
+        <TextBlock Text="Row0 Column1" Grid.Row="0" Grid.Column="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="79.2,59,78.6,59" Height="22" Width="107"></TextBlock>
+        <TextBlock Text="Row0 Column2" Grid.Row="0" Grid.Column="3" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="78.4,59,78.6,59" Height="22" Width="107"></TextBlock>
+        <TextBlock Text="Row1 Column0" Grid.Row="1" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,59,100.8,59" Height="22" Width="106"></TextBlock>
+        <TextBlock Text="Start" Grid.Row="1" Grid.Column="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="116.2,59,115.6,59" Height="22" Width="33"></TextBlock>
+        <TextBlock Text="Row1 Column2" Grid.Row="1" Grid.Column="3" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="78.4,59,78.6,59" Height="22" Width="107"></TextBlock>
+        <TextBlock Text="Row2 Column0" Grid.Row="2" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,59,100.8,59" Height="22" Width="106"></TextBlock>
+        <TextBlock Text="Row2 Column1" Grid.Row="2" Grid.Column="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="79.2,59,78.6,59" Height="22" Width="107"></TextBlock>
+        <TextBlock Text="Row2 Column2" Grid.Row="2" Grid.Column="3" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="78.4,59,78.6,59" Height="22" Width="107"></TextBlock>
     </Grid>
 </Window>

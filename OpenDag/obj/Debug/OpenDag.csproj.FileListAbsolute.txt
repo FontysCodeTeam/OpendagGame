@@ -1,0 +1,15 @@
+D:\VisualStudio\Repos\OpendagGame\OpenDag\bin\Debug\OpenDag.exe.config
+D:\VisualStudio\Repos\OpendagGame\OpenDag\bin\Debug\OpenDag.exe
+D:\VisualStudio\Repos\OpendagGame\OpenDag\bin\Debug\OpenDag.pdb
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.csprojAssemblyReference.cache
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\MainWindow.g.cs
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\App.g.cs
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag_MarkupCompile.cache
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag_MarkupCompile.lref
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\MainWindow.baml
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.g.resources
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.Properties.Resources.resources
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.csproj.GenerateResource.cache
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.exe
+D:\VisualStudio\Repos\OpendagGame\OpenDag\obj\Debug\OpenDag.pdb
