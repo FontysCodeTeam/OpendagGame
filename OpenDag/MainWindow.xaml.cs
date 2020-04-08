@@ -24,5 +24,12 @@ namespace OpenDag
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            QuestionWindow questionWindow = new QuestionWindow();
+            questionWindow.Show();
+            this.Hide();
+        }
     }
 }

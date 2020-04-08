@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenDag"
         mc:Ignorable="d"
-        Title="MainWindow" Height="590.1" Width="1005.2" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="590.1" Width="1005.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"></ColumnDefinition>

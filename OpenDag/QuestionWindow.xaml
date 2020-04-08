@@ -1,0 +1,29 @@
+﻿<Window x:Class="OpenDag.QuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenDag"
+        mc:Ignorable="d"
+        Title="QuestionWindow" Height="480" Width="1400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="280"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image x:Name="imgBusiness" Grid.Row="0" Grid.Column="0" Margin="5" Source="images/Business.png"/>
+        <Image x:Name="imgInfrastructure" Grid.Row="0" Grid.Column="1" Margin="5" Source="images/Infrastructure.png"/>
+        <Image x:Name="imgMedia" Grid.Row="0" Grid.Column="2" Margin="5" Source="images/Media.png"/>
+        <Image x:Name="imgSoftware" Grid.Row="0" Grid.Column="3" Margin="5" Source="images/Software.png"/>
+        <Image x:Name="imgTechnology" Grid.Row="0" Grid.Column="4" Margin="5" Source="images/Technology.png"/>
+        <TextBlock x:Name="tbQuestion" Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" Text="Welke van deze afbeeldingen vind jij het meest interessant?" FontSize="50" Margin="20" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
